@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #22b6e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .checkbox-container label {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+        }
+
+        .doctor-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .doctor-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .doctor-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .doctor-info {
+            flex: 1;
+        }
+
+        .doctor-info h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        .doctor-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .doctor-rating {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .call-button {
+            background-color: #22b6e8;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .slot-booking {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .slot-button {
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s;
+        }
+
+        .slot-button:hover {
+            background-color: #22b6e8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for Doctor Specialization">
+            <button>Search</button>
+        </div>
+
+        <!-- Specializations filter -->
+        <div class="checkbox-container">
+            <label><input type="checkbox" name="specialization" value="cardiology"> Cardiology</label>
+            <label><input type="checkbox" name="specialization" value="neurology"> Neurology</label>
+            <label><input type="checkbox" name="specialization" value="orthopedics"> Orthopedics</label>
+            <label><input type="checkbox" name="specialization" value="pediatrics"> Pediatrics</label>
+            <label><input type="checkbox" name="specialization" value="dermatology"> Dermatology</label>
+            <label><input type="checkbox" name="specialization" value="ent"> ENT</label>
+            <label><input type="checkbox" name="specialization" value="gynecology"> Gynecology</label>
+            <label><input type="checkbox" name="specialization" value="general-medicine"> General Medicine</label>
+        </div>
+
+        <!-- Doctor profile cards -->
+        <div class="doctor-card">
+            <div class="doctor-header">
+                <div class="doctor-image">👤</div>
+                <div class="doctor-info">
+                    <h3>Dr. Ram</h3>
+                    <p>Specialization: Cardiology</p>
+                    <p class="doctor-rating">Rating: ★★★★☆ 4.5</p>
+                </div>
+                <a href="tel:+1234567890" class="call-button">Call</a>
+            </div>
+            <div class="slot-booking">
+                <button class="slot-button">9:00 AM</button>
+                <button class="slot-button">11:00 AM</button>
+                <button class="slot-button">2:00 PM</button>
+                <button class="slot-button">4:00 PM</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-header">
+                <div class="doctor-image">👤</div>
+                <div class="doctor-info">
+                    <h3>Dr. Vikram</h3>
+                    <p>Specialization: Neurology</p>
+                    <p class="doctor-rating">Rating: ★★★★☆ 4.3</p>
+                </div>
+                <a href="tel:+0987654321" class="call-button">Call</a>
+            </div>
+            <div class="slot-booking">
+                <button class="slot-button">10:00 AM</button>
+                <button class="slot-button">1:00 PM</button>
+                <button class="slot-button">3:00 PM</button>
+                <button class="slot-button">5:00 PM</button>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <div class="doctor-header">
+                <div class="doctor-image">👤</div>
+                <div class="doctor-info">
+                    <h3>Dr. Rahul</h3>
+                    <p>Specialization: Orthopedics</p>
+                    <p class="doctor-rating">Rating: ★★★★★ 4.8</p>
+                </div>
+                <a href="tel:+1122334455" class="call-button">Call</a>
+            </div>
+            <div class="slot-booking">
+                <button class="slot-button">9:30 AM</button>
+                <button class="slot-button">12:30 PM</button>
+                <button class="slot-button">3:30 PM</button>
+                <button class="slot-button">6:00 PM</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

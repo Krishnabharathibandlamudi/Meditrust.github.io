@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #22b6e8;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .navbar h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .attributes {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .attribute-box {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .attribute-box:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .attribute-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .attribute-box p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Welcome to MEDITRUST</h1>
+        <h2>Home Page</h2>
+        <!-- Removed the logo image -->
+    </div>
+
+    <div class="content">
+        <h2>Services we Offer</h2>
+        <div class="attributes">
+            <!-- Link to NearbyCare.html for NearbyCare Finder -->
+            <a href="3.html" class="attribute-box">
+                <h3>NearbyCare Finder</h3>
+                <p>Clicking this will open a search bar where you can enter your health issue. After you submit your query, you'll receive details of nearby hospitals that can assist you.</p>
+            </a>
+            
+            <!-- Link to emergency.html for Emergency -->
+            <a href="4.html" class="attribute-box">
+                <h3>Emergency</h3>
+                <p>By clicking this, nearby hospitals and ambulance services will access your location. They will call you, if you're unresponsive, they will come with an ambulance service.</p>
+            </a>
+            
+            <!-- Link to liveconsultations.html for Live Consultations -->
+            <a href="5.html" class="attribute-box">
+                <h3>Live Consultations</h3>
+                <p>By clicking this, you'll access a search option to find the type of doctor you're looking for. You can directly call the doctor or book an appointment, all while keeping your personal data private.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
